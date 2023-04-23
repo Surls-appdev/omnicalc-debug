@@ -2,7 +2,7 @@ class MeteorologistController < ApplicationController
   def street_to_weather
     @street_address = params.fetch("address")
     
-    maps_key = ENV.fetch("GEOCODING_API_KEY")
+    maps_key = ENV.fetch("GMAPS_KEY")
 
     url = "https://maps.googleapis.com/maps/api/geocode/json?key=" +  maps_key + "&address=" + @street_address
 
