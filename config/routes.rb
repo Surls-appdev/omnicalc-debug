@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get("/", { :controller => "calendar", :action => "invite" })
+  #get("/", { :controller => "calendar", :action => "invite" })
   
   get("/calendar_invite/new", { :controller => "calendar", :action => "invite" })
   get("/calendar_invite/results", { :controller => "calendar", :action => "generate" })
